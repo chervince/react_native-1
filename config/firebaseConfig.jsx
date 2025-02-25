@@ -11,7 +11,7 @@ import { getFirestore } from "firebase/firestore";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyA5m3QLX9ejJIorH1JLncOSkebw5b9fT14",
+  apiKey: "api key",
   authDomain: "react-native-expo-1-9219b.firebaseapp.com",
   projectId: "react-native-expo-1-9219b",
   storageBucket: "react-native-expo-1-9219b.firebasestorage.app",
