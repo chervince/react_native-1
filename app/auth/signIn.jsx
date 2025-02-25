@@ -11,7 +11,11 @@ export default function signIn() {
   const router = useRouter();
   const [email,setEmail]=useState()
   const [password,setPassword]=useState()
-  const{userDetail,setUserDetail}=useContext(UserDetailContext)
+  const context = useContext(UserDetailContext);
+  if (!context) {
+    throw new Error("UserDetailContext must be used within a UserDetailContext.Provider");
+  }
+  const { userDetail, setUserDetail } = context;
   const [loading,setLoading]=useState(false);
 
   const onSignInClick=()=>{

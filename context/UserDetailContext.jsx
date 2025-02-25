@@ -1,1 +1,3 @@
-export const UserDetailContext = createContext();
+import { createContext } from 'react';
+
+export const UserDetailContext = createContext(null);
